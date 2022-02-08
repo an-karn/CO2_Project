@@ -6,6 +6,7 @@ This is a sample project made in React, and Node js and mysql. The frontend in r
 -First of all copy the hhtp link and go to your folder and type:  `git clone 'link'` and press enter.
 
 -Once the directory is cloned , go to terminal and install all required dependencies using the command `npm install`.
+
 -Now one of the pre requisite is you must have mysql installed. So, go to mysql and run following queries.
 -
 
