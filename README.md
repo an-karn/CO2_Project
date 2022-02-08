@@ -1,14 +1,28 @@
 
 This is a sample project made in React, and Node js and mysql. The frontend in react is stored in frontend folder and backend in nodejs and express is stored in backend folder.
-
-#How to implement the project
+How to implement the project
 
 -First of all copy the hhtp link and go to your folder and type:  `git clone 'link'` and press enter.
 
 -Once the directory is cloned , go to terminal and install all required dependencies using the command `npm install`.
 
--Now one of the pre requisite is you must have mysql installed. So, go to mysql and run following queries.
--
+-Now one of the pre requisite is you must have mysql installed. So, go to mysql and run following queries:
+-`CREATE DATABASE airdata;`
+-`USE airdata;`
+-`CREATE TABLE co_amount(
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+status VARCHAR(30),
+amount int
+);`
+
+-Now go to backend folder and then index.js file abd replace line 15-20 with your localhost, username, and password for mysql.
+
+-We are almost done. Now open two terminals in one terminak go to frontend folder and type `npm start`
+
+-In other terminal go to backend folder and type `npm start`
+
+-Thats it reload the chart js and you will see new barcharts every time you reload. There is color name on the label and bar chart is colored with the same color as status.
+-For e.g. co2 amount with status yellow in bar chart its color is yellow. To know exact amount hover to the barchart and it shows real number.
 
 ##Functionalities
 - Since, I could not find an API where CO2 data is pushed every 10 seconds, so I made my own data. I called a function that randomely generates an integer and pushes into database   every 10 second and then data is extracted in react and then graph is plotted using chart js in react.
