@@ -29,7 +29,7 @@ amount int
 
 - Thats it reload the chart js and you will see new barcharts every 10 seconds once you reload. 
 
-- The bar chart consist of x axis as label where status is shown. For exaple, if the status of a bar chart is red, that means co2 amount is greater than 2000, green 
+- The bar chart consist of x axis as label where status is shown. For example, if the status of a bar chart is red, that means co2 amount is greater than 2000, green 
 less than 1000 and yellow means between 1000 and 2000.
 
 - For e.g. co2 amount with status yellow in bar chart its color is yellow. To know exact amount hover to the barchart and it shows real number.
