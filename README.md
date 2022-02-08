@@ -6,7 +6,7 @@ This is a sample project made in React, and Node js and mysql. The frontend in r
 # How to implement the project
 
 
-- First of all copy the hhtp link and go to your folder and type:  `git clone 'link'` and press enter.
+- First of all copy the http link and go to your folder and type:  `git clone 'link'` and press enter.
 
 - Once the directory is cloned , go to terminal and install all required dependencies using the command `npm install`.
 
@@ -23,13 +23,20 @@ amount int
 
 - Now go to backend folder and then index.js file abd replace line 15-20 with your localhost, username, and password for mysql.
 
-- We are almost done. Now open two terminals in one terminak go to frontend folder and type `npm start`
+- We are almost done. Now open two terminals in one terminal go to frontend folder and type `npm start`
 
 - In other terminal go to backend folder and type `npm start`
 
-- Thats it reload the chart js and you will see new barcharts every time you reload. There is color name on the label and bar chart is colored with the same color as status.
+- Thats it reload the chart js and you will see new barcharts every 10 seconds once you reload. 
+
+- The bar chart consist of x axis as label where status is shown. For exaple, if the status of a bar chart is red, that means co2 amount is greater than 2000, green 
+less than 1000 and yellow means between 1000 and 2000.
 
 - For e.g. co2 amount with status yellow in bar chart its color is yellow. To know exact amount hover to the barchart and it shows real number.
+
+![sample_bar](https://user-images.githubusercontent.com/73000507/152933586-efe918de-c569-4808-9d2f-5373dc76ad08.png)
+
+
 
 ## Functionalities
 - Since, I could not find an API where CO2 data is pushed every 10 seconds, so I made my own data. I called a function that randomely generates an integer and pushes into database   every 10 second and then data is extracted in react and then graph is plotted using chart js in react.
