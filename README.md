@@ -21,7 +21,7 @@ status VARCHAR(30),
 amount int
 );`
 
-- Now go to backend folder and then index.js file abd replace line 15-20 with your localhost, username, and password for mysql.
+- Now go to backend folder and then index.js file and replace line 15-20 with your localhost, username, and password for mysql.
 
 - We are almost done. Now open two terminals in one terminal go to frontend folder and type `npm start`
 
